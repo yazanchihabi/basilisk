@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 920" role="img" aria-labelledby="chart-title chart-description">
+<title id="chart-title">Basilisk package and repository usage</title>
+<desc id="chart-description">Recorded requests for known .whl files from all clients except identified mirrors, including repeat and partial requests, with coverage dates, followed by seven-day trailing means of daily BSK wheel requests and GitHub clone activity. Only complete windows of seven observed days are shown.</desc>
+<style>
+            .background { fill: #ffffff; }
+            .total-card { fill: #f6f8fa; stroke: #d8dee4; }
+            .chart-frame { fill: none; stroke: #8c959f; stroke-width: 1; }
+            .grid-line { stroke: #d8dee4; stroke-width: 1; }
+            .axis-tick { stroke: #57606a; stroke-width: 1; }
+            .chart-title, .panel-title, .axis-title, .axis-text, .legend-text, .total-count {
+                fill: #24292f;
+                font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+            }
+            .chart-title { font-size: 22px; font-weight: 600; }
+            .total-count { font-size: 40px; font-weight: 700; }
+            .chart-subtitle { fill: #57606a; font-size: 12px; }
+            .panel-title { font-size: 16px; font-weight: 600; }
+            .axis-title { font-size: 12px; font-weight: 600; }
+            .axis-text, .legend-text { font-size: 11px; }
+            .data-line, .legend-line {
+                fill: none;
+                stroke-linejoin: round;
+                stroke-linecap: round;
+                stroke-width: 2.5;
+                vector-effect: non-scaling-stroke;
+            }
+            .wheel-requests { stroke: #0969da; }
+            .github-clones { stroke: #1a7f37; }
+            .github-unique { stroke: #8250df; }
+            @media (prefers-color-scheme: dark) {
+                .background { fill: #0d1117; }
+                .total-card { fill: #161b22; stroke: #30363d; }
+                .chart-frame { stroke: #6e7681; }
+                .grid-line { stroke: #30363d; }
+                .axis-tick { stroke: #8b949e; }
+                .chart-title, .panel-title, .axis-title, .axis-text, .legend-text, .total-count {
+                    fill: #e6edf3;
+                }
+                .chart-subtitle { fill: #8b949e; }
+                .wheel-requests { stroke: #58a6ff; }
+                .github-clones { stroke: #3fb950; }
+                .github-unique { stroke: #bc8cff; }
+            }
+        </style>
+<rect class="background" width="1000" height="920" />
+<text id="chart-title-text" class="chart-title" x="30" y="34">Basilisk usage</text>
+<text class="chart-title chart-subtitle" x="970" y="32" text-anchor="end">Updated 2026-10-22T11:56:58+00:00</text>
+<rect class="total-card" x="30" y="55" width="940" height="134" rx="10" />
+<text class="panel-title" x="54" y="84">Recorded wheel download requests</text>
+<text class="total-count" x="54" y="133">28,985</text>
+<text class="axis-text" x="54" y="165">Known .whl files; mirrors excluded; repeat and partial requests included</text>
+<text class="axis-title" x="510" y="110">2025-08-27 through 2026-10-21 (UTC)</text>
+<text class="axis-text" x="510" y="133">420 observed days; missing dates excluded</text>
+<text class="panel-title" x="90.0" y="226.0">Daily BSK wheel download requests — 7-day trailing mean</text>
+<rect class="chart-frame" x="90.0" y="250.0" width="875.0" height="225.0" />
+<line class="grid-line" x1="90.0" y1="475.0" x2="965.0" y2="475.0" />
+<text class="axis-text" x="80.0" y="479.0" text-anchor="end">0</text>
+<line class="grid-line" x1="90.0" y1="418.8" x2="965.0" y2="418.8" />
+<text class="axis-text" x="80.0" y="422.8" text-anchor="end">125</text>
+<line class="grid-line" x1="90.0" y1="362.5" x2="965.0" y2="362.5" />
+<text class="axis-text" x="80.0" y="366.5" text-anchor="end">250</text>
+<line class="grid-line" x1="90.0" y1="306.2" x2="965.0" y2="306.2" />
+<text class="axis-text" x="80.0" y="310.2" text-anchor="end">375</text>
+<line class="grid-line" x1="90.0" y1="250.0" x2="965.0" y2="250.0" />
+<text class="axis-text" x="80.0" y="254.0" text-anchor="end">500</text>
+<line class="axis-tick" x1="90.0" y1="475.0" x2="90.0" y2="481.0" />
+<text class="axis-text" x="90.0" y="498.0" text-anchor="middle">2025-09-02</text>
+<line class="axis-tick" x1="309.8" y1="475.0" x2="309.8" y2="481.0" />
+<text class="axis-text" x="309.8" y="498.0" text-anchor="middle">2025-12-15</text>
+<line class="axis-tick" x1="527.5" y1="475.0" x2="527.5" y2="481.0" />
+<text class="axis-text" x="527.5" y="498.0" text-anchor="middle">2026-03-28</text>
+<line class="axis-tick" x1="745.2" y1="475.0" x2="745.2" y2="481.0" />
+<text class="axis-text" x="745.2" y="498.0" text-anchor="middle">2026-07-09</text>
+<line class="axis-tick" x1="965.0" y1="475.0" x2="965.0" y2="481.0" />
+<text class="axis-text" x="965.0" y="498.0" text-anchor="middle">2026-10-21</text>
+<text class="axis-title" x="527.5" y="520.0" text-anchor="middle">UTC date</text>
+<text class="axis-title" x="22" y="362.5" text-anchor="middle" transform="rotate(-90 22 362.5)">Requests/day</text>
+<line class="legend-line wheel-requests" x1="770.0" y1="221.0" x2="798.0" y2="221.0" />
+<text class="legend-text" x="806.0" y="225.0">BSK wheels</text>
+<path class="data-line wheel-requests" d="M90.0,475.0 l0,0 L92.1,475.0 L94.2,475.0 L96.3,475.0 L98.5,475.0 L100.6,475.0 L102.7,475.0 L104.8,475.0 L106.9,475.0 L109.0,475.0 L111.1,475.0 L113.2,475.0 L115.4,475.0 L117.5,475.0 L119.6,475.0 L121.7,475.0 L123.8,475.0 L125.9,475.0 L128.0,475.0 L130.2,475.0 L132.3,475.0 L134.4,475.0 L136.5,475.0 L138.6,475.0 L140.7,475.0 L142.8,475.0 L145.0,475.0 L147.1,475.0 L149.2,475.0 L151.3,475.0 L153.4,475.0 L155.5,475.0 L157.6,475.0 L159.7,475.0 L161.9,475.0 L164.0,475.0 L166.1,475.0 L168.2,475.0 L170.3,475.0 L172.4,475.0 L174.5,475.0 L176.7,475.0 L178.8,475.0 L180.9,475.0 L183.0,475.0 L185.1,475.0 L187.2,475.0 L189.3,475.0 L191.4,475.0 L193.6,475.0 L195.7,475.0 L197.8,475.0 L199.9,475.0 L202.0,475.0 L204.1,475.0 L206.2,475.0 L208.4,475.0 L210.5,475.0 L212.6,475.0 L214.7,475.0 L216.8,475.0 L218.9,475.0 L221.0,475.0 L223.2,475.0 L225.3,475.0 L227.4,475.0 L229.5,475.0 L231.6,475.0 L233.7,475.0 L235.8,475.0 L237.9,475.0 L240.1,475.0 L242.2,475.0 L244.3,475.0 L246.4,475.0 L248.5,475.0 L250.6,475.0 L252.7,475.0 L254.9,475.0 L257.0,475.0 L259.1,475.0 L261.2,475.0 L263.3,475.0 L265.4,475.0 L267.5,475.0 L269.6,475.0 L271.8,475.0 L273.9,475.0 L276.0,475.0 L278.1,475.0 L280.2,475.0 L282.3,475.0 L284.4,475.0 L286.6,475.0 L288.7,475.0 L290.8,475.0 L292.9,475.0 L295.0,475.0 L297.1,475.0 L299.2,475.0 L301.4,475.0 L303.5,475.0 L305.6,475.0 L307.7,475.0 L309.8,475.0 L311.9,475.0 L314.0,475.0 L316.1,475.0 L318.3,475.0 L320.4,475.0 L322.5,475.0 L324.6,475.0 L326.7,475.0 L328.8,475.0 L330.9,475.0 L333.1,475.0 L335.2,475.0 L337.3,475.0 L339.4,475.0 L341.5,475.0 L343.6,475.0 L345.7,475.0 L347.9,475.0 L350.0,475.0 L352.1,475.0 L354.2,475.0 L356.3,475.0 L358.4,475.0 L360.5,474.6 L362.6,474.2 L364.8,474.0 L366.9,473.9 L369.0,473.7 L371.1,472.8 L373.2,472.0 L375.3,472.0 L377.4,471.9 L379.6,471.9 L381.7,471.9 L383.8,472.0 L385.9,472.9 L388.0,473.5 L390.1,473.5 L392.2,474.0 L394.3,474.1 M411.3,451.1 l0,0 L413.4,452.6 L415.5,451.0 L417.6,449.0 L419.7,448.8 L421.8,462.9 L423.9,463.9 L426.1,448.8 L428.2,448.6 L430.3,446.5 L432.4,444.8 L434.5,443.6 L436.6,443.5 L438.7,442.5 L440.8,458.6 L443.0,457.3 L445.1,458.9 L447.2,459.5 L449.3,459.8 L451.4,459.3 L453.5,448.0 L455.6,443.0 L457.8,441.8 L459.9,443.3 L462.0,443.0 L464.1,443.4 L466.2,442.3 L468.3,454.2 L470.4,457.3 L472.5,456.2 L474.7,454.9 L476.8,457.4 L478.9,456.7 L481.0,458.7 L483.1,459.3 L485.2,459.6 L487.3,459.8 L489.5,459.4 L491.6,458.7 L493.7,459.1 L495.8,458.9 L497.9,458.3 L500.0,459.5 L502.1,463.4 L504.3,465.1 L506.4,464.8 L508.5,465.7 L510.6,465.6 L512.7,461.9 L514.8,461.6 L516.9,461.7 L519.0,461.8 L521.2,460.3 L523.3,453.5 L525.4,451.6 L527.5,454.4 L529.6,454.8 L531.7,449.9 L533.8,450.4 L536.0,452.3 L538.1,455.6 L540.2,436.8 L542.3,436.1 L544.4,434.0 L546.5,437.9 L548.6,435.5 L550.7,434.7 L552.9,436.5 L555.0,454.9 L557.1,446.1 L559.2,447.2 L561.3,447.6 L563.4,447.4 L565.5,448.6 L567.7,450.1 L569.8,453.1 L571.9,455.6 L574.0,448.5 L576.1,445.0 L578.2,422.9 L580.3,413.9 L582.5,412.3 L584.6,411.4 L586.7,418.4 L588.8,404.1 L590.9,405.3 L593.0,428.1 L595.1,434.6 L597.2,435.3 L599.4,434.8 L601.5,435.9 L603.6,457.4 L605.7,457.6 L607.8,457.4 L609.9,456.7 L612.0,452.1 L614.2,437.5 L616.3,436.9 L618.4,434.7 L620.5,435.6 L622.6,433.4 L624.7,434.8 L626.8,437.8 L628.9,445.1 L631.1,445.6 L633.2,444.5 L635.3,444.5 L637.4,441.0 L639.5,440.7 L641.6,439.8 L643.7,445.1 L645.9,444.9 L648.0,443.9 L650.1,445.5 L652.2,450.6 L654.3,450.1 L656.4,451.7 L658.5,454.0 L660.7,452.9 L662.8,455.8 L664.9,451.4 L667.0,451.6 L669.1,453.7 L671.2,454.2 L673.3,451.9 L675.4,440.7 L677.6,431.9 L679.7,436.4 L681.8,437.6 L683.9,436.2 L686.0,436.0 L688.1,436.8 L690.2,448.7 L692.4,457.1 L694.5,452.9 L696.6,451.3 L698.7,452.3 L700.8,451.5 L702.9,452.9 L705.0,453.9 L707.1,454.4 L709.3,456.8 L711.4,456.7 L713.5,455.1 L715.6,456.6 L717.7,454.2 L719.8,453.6 L721.9,452.8 L724.1,450.6 L726.2,449.1 L728.3,447.4 L730.4,446.5 L732.5,446.8 L734.6,444.0 L736.7,444.3 L738.9,447.1 L741.0,448.0 L743.1,447.6 L745.2,422.8 L747.3,421.2 L749.4,423.4 L751.5,419.1 L753.6,413.0 L755.8,414.1 L757.9,414.9 L760.0,438.1 L762.1,440.4 L764.2,440.1 L766.3,441.8 L768.4,445.8 L770.6,440.0 L772.7,436.5 L774.8,433.6 L776.9,427.4 L779.0,423.1 L781.1,421.1 L783.2,392.9 L785.4,389.2 L787.5,390.9 L789.6,391.6 L791.7,394.8 L793.8,397.5 L795.9,400.9 L798.0,430.2 L800.1,438.1 L802.3,436.9 L804.4,431.5 L806.5,428.0 L808.6,427.9 L810.7,426.7 L812.8,420.0 L814.9,412.9 L817.1,412.1 L819.2,419.3 L821.3,420.7 L823.4,421.9 L825.5,424.4 L827.6,423.6 L829.7,425.6 L831.8,424.7 L834.0,419.6 L836.1,421.0 L838.2,418.4 L840.3,417.3 L842.4,419.9 L844.5,418.5 L846.6,417.2 L848.8,418.2 L850.9,420.9 L853.0,420.7 L855.1,422.2 L857.2,421.4 L859.3,421.6 L861.4,421.7 L863.6,422.3 L865.7,420.4 L867.8,422.4 L869.9,420.9 L872.0,424.9 L874.1,422.8 L876.2,423.5 L878.3,421.0 L880.5,418.2 L882.6,418.2 L884.7,419.1 L886.8,415.0 L888.9,418.2 L891.0,419.3 L893.1,419.4 L895.3,422.2 L897.4,421.4 L899.5,421.8 L901.6,400.5 L903.7,395.3 L905.8,394.4 L907.9,396.5 L910.0,389.6 L912.2,385.1 L914.3,364.5 L916.4,382.2 L918.5,388.7 L920.6,384.6 L922.7,383.8 L924.8,385.3 L927.0,388.5 L929.1,354.2 L931.2,348.4 L933.3,345.5 L935.4,339.6 L937.5,323.9 L939.6,300.3 L941.8,293.8 L943.9,338.6 L946.0,328.0 L948.1,307.9 L950.2,284.6 L952.3,289.2 L954.4,307.0 L956.5,302.9 L958.7,306.1 L960.8,306.2 L962.9,298.3 L965.0,299.0" />
+<text class="panel-title" x="90.0" y="561.0">Daily GitHub clone activity — 7-day trailing mean</text>
+<text class="axis-text" x="527.5" y="697.5" text-anchor="middle">No complete seven-day window available</text>
+<text class="axis-text" x="30" y="883">Known .whl files only; identified mirrors excluded. Counts include repeat and partial requests.</text>
+<text class="axis-text" x="30" y="905">pypi: ok; last success 2026-10-22T11:56:58+00:00; github: error; last success never</text>
+</svg>
